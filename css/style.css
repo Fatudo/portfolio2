@@ -21,6 +21,8 @@ body {
     margin: 25px;
     padding: 25px;
     height: 850px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .cartao {
@@ -89,7 +91,22 @@ body {
 
 /*Main--------------------------------------------------------------------------------------*/
 
+#projetos { grid-area: projetos; }
+#projeto1 { grid-area: projeto1; }
+#projeto2 { grid-area: projeto2; }
+#projeto3 { grid-area: projeto3; }
+#projeto4 { grid-area: projeto4; }
 
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: "projetos projetos"
+                         "projeto1 projeto2"
+                         "projeto3 projeto4"
+    ;
+    gap: 25px;
+}
 
 /*Footer--------------------------------------------------------------------------------------*/
 
